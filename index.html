@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Расчет стоимости</title>
+  <link rel="stylesheet" type="text/css" href="./files/style.css">
+  <body>
+    <div>
+      <label for="cold">Холодное водоснабжение</label>
+      <div id="cold">
+        <input type="text" id="cold_present" value="" placeholder="Настоящие показания">
+        <input type="text" id="cold_past" value="" placeholder="Прошлые показания">
+        <span>26.29(хвс)</span>
+        <span>18.98(во)</span>
+      </div>
+      <label for="hot">Горячее водоснабжение</label>
+      <div id="hot">
+        <input type="text" id="hot_present" value="" placeholder="Настоящие показания">
+        <input type="text" id="hot_past" value="" placeholder="Прошлые показания">
+        <span>1397.35(гвс)</span>
+        <span>0.0467(норматив потребления)</span>
+      </div>
+      <label for="electricity">Электроэнергия</label>
+      <div id="electricity">
+        <input type="text" id="electricity_present" value="" placeholder="Настоящие показания">
+        <input type="text" id="electricity_past" value="" placeholder="Прошлые показания">
+        <span>3.47(электроэнергия)</span>
+      </div>
+      <button onclick="account()">Рассчет</button>
+      <div class="difference">
+        <span id="cold_difference"></span><br>
+        <span id="hot_difference"></span><br>
+        <span id="electricity_difference"></span>
+      </div>
+      <div class="payment">
+        <span id="cold_payment"></span><br>
+        <span id="hot_payment"></span><br>
+        <span id="electricity_payment"></span>
+      </div>
+    </div>
+    <script src="./files/script.js"></script>

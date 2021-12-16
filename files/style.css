@@ -1,0 +1,10 @@
+#cold, #hot, #electricity, button {
+    margin-bottom: 30px;
+}
+label {
+    font-weight: bold;
+    font-size: 20px;
+}
+input, span {
+    font-size: 17px;
+}
