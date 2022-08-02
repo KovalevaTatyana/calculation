@@ -8,7 +8,7 @@ function account() {
       let cold_payment = ((tariffhvs*cold_difference)+(tariffvo*cold_difference)).toFixed(2);
       document.getElementById('cold_payment').innerHTML = "К оплате за холодную воду: " + cold_payment + " р.";
 
-      const tariffhot = 1397.35;
+      const tariffhot = 1432.03;
       const normhot = 0.0467;
       let hot_past  = document.getElementById('hot_past').value;
       let hot_present  = document.getElementById('hot_present').value;
@@ -17,7 +17,7 @@ function account() {
       let hot_payment = ((normhot * hot_difference)*tariffhot).toFixed(2);
       document.getElementById('hot_payment').innerHTML = "К оплате за горячую воду: " + hot_payment + " р.";
 
-      const tariffelectricity = 3.47;
+      const tariffelectricity = 3.58;
       let electricity_past  = document.getElementById('electricity_past').value;
       let electricity_present  = document.getElementById('electricity_present').value;
       let electricity_difference = (electricity_present - electricity_past).toFixed(2);
